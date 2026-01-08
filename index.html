@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>The Crash Party</title>
+
   <style>
     body {
       margin: 0;
       height: 100vh;
-      background-color: #e6d9ff; /* light purple */
+      background-color: #e6d9ff; 
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -17,7 +18,7 @@
 
     h1 {
       font-size: 4rem;
-      color: #3d1a78; /* darker purple */
+      color: #3d1a78;
       margin-bottom: 10px;
     }
 
@@ -26,9 +27,37 @@
       color: #5a3aa8;
       font-style: italic;
     }
+
+    /* image */
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 120px; 
+      opacity: 0;
+      animation: slowPop 2.5s ease-out forwards;
+    }
+
+    @keyframes slowPop {
+      from {
+        opacity: 0;
+        transform: translateY(-15px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
   </style>
 </head>
+
 <body>
+  <img 
+    src="https://www.google.com/url?sa=t&source=web&rct=j&url=https%3A%2F%2Fdepositphotos.com%2Fillustrations%2Frhino-logo.html"
+    alt="Crash Party Logo"
+    class="logo"
+  >
+
   <h1>The Crash Party</h1>
   <p>"crash that changes the system"</p>
 </body>
