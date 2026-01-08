@@ -46,6 +46,24 @@
         transform: translateY(0);
       }
     }
+    <p class="slogan" onclick="toggleMeaning()">
+    "crash that changes the system"
+  </p>
+
+  <!-- Meaning statement -->
+  <p class="meaning" id="meaningText">
+    placeholder
+  </p>
+
+  <script>
+    function toggleMeaning() {
+      const meaning = document.getElementById("meaningText");
+      if (meaning.style.display === "none" || meaning.style.display === "") {
+        meaning.style.display = "block";
+      } else {
+        meaning.style.display = "none";
+      }
+    }
   </style>
 </head>
 
