@@ -3,27 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <title>The Crash Party</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <img src="rhino-removebg-preview.png" alt="Crash Party Logo" class="logo">
+  <img src="rhino.png" alt="Crash Party Logo" class="logo">
+
   <h1>The Crash Party</h1>
+
   <p class="slogan" onclick="toggleMeaning()">
     "crash that changes the system"
   </p>
 
   <p class="meaning" id="meaningText">
-    When we crash into the system, we change the country into a better place.
+    placeholder
   </p>
+
+  <!-- Arrow to next page -->
+  <a href="values.html" class="next-arrow">→</a>
 
   <script>
     function toggleMeaning() {
       const meaning = document.getElementById("meaningText");
-      if (meaning.style.display === "none" || meaning.style.display === "") {
-        meaning.style.display = "block";
-      } else {
-        meaning.style.display = "none";
-      }
+      meaning.style.display =
+        meaning.style.display === "block" ? "none" : "block";
     }
   </script>
 </body>
