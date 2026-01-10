@@ -3,82 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <title>The Crash Party</title>
-
-  <style>
-    body {
-      margin: 0;
-      height: 100vh;
-      background-color: #e6d9ff; /* light purple */
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      font-family: Arial, Helvetica, sans-serif;
-      text-align: center;
-    }
-
-    .logo {
-      width: 220px;
-      margin-bottom: 20px;
-      opacity: 0;
-      animation: slowPop 2.5s ease-out forwards;
-    }
-
-    h1 {
-      font-size: 4rem;
-      color: #3d1a78;
-      margin-bottom: 15px;
-    }
-
-    /* Clickable slogan */
-    .slogan {
-      font-size: 1.5rem;
-      color: #5a3aa8;
-      font-style: italic;
-      cursor: pointer;
-      transition: transform 0.3s ease, font-size 0.3s ease;
-    }
-
-    /* Hover effect */
-    .slogan:hover {
-      transform: translateY(-5px);
-      font-size: 1.65rem;
-    }
-
-    /* Meaning statement (hidden by default) */
-    .meaning {
-      margin-top: 15px;
-      font-size: 1.3rem;
-      color: #5a3aa8;
-      display: none;
-    }
-
-    @keyframes slowPop {
-      from {
-        opacity: 0;
-        transform: translateY(-20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-  </style>
 </head>
 
 <body>
-  <!-- Image -->
   <img src="rhino-removebg-preview.png" alt="Crash Party Logo" class="logo">
-
-  <!-- Title -->
   <h1>The Crash Party</h1>
-
-  <!-- Clickable slogan -->
   <p class="slogan" onclick="toggleMeaning()">
     "crash that changes the system"
   </p>
 
-  <!-- Meaning statement -->
   <p class="meaning" id="meaningText">
     When we crash into the system, we change the country into a better place.
   </p>
