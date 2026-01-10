@@ -19,7 +19,7 @@ body {
   /* Smaller logo for values page */
 .small-logo {
   width: 80px;
-  position: absolute;
+  position: fixed;
   top: 20px;
   left: 20px;
   opacity: 1; /* no animation needed here */
