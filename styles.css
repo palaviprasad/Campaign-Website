@@ -12,8 +12,8 @@ body {
 }
 
 .logo {
-  width: 320px;
-  margin-bottom: 40px;
+  width: 420px;
+  margin-bottom: 20px;
   opacity: 0;
   animation: slowPop 2.5s ease-out forwards;
 }
