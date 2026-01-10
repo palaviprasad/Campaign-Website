@@ -16,6 +16,15 @@ body {
   margin-bottom: 20px;
   opacity: 0;
   animation: slowPop 2.5s ease-out forwards;
+  /* Smaller logo for values page */
+.small-logo {
+  width: 80px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  opacity: 1; /* no animation needed here */
+  animation: none;
+}
 }
 
 h1 {
