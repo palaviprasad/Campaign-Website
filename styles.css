@@ -13,7 +13,7 @@ body {
 
 .logo {
   width: 220px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   opacity: 0;
   animation: slowPop 2.5s ease-out forwards;
 }
