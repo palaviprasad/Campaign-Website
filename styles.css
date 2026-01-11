@@ -100,4 +100,48 @@ h1 {
     opacity: 1;
     transform: translateY(0);
   }
+}/* Card layout */
+.card-container {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+/* Card style */
+.card {
+  width: 260px;
+  height: 180px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 20px;
+  color: #3d1a78;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card h2 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+/* Hidden content */
+.card-content {
+  opacity: 0;
+  transform: translateY(15px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  font-size: 0.95rem;
+  margin-top: 10px;
+}
+
+/* Hover effect */
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card:hover .card-content {
+  opacity: 1;
+  transform: translateY(0);
 }
