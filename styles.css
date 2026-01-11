@@ -109,13 +109,13 @@ h1 {
 
 /* Card style */
 .card {
-  width: 260px;
-  height: 180px;
+  width: 320px;          /* wider */
+  height: 360px;         /* taller */
   background-color: #ffffff;
-  border-radius: 15px;
-  padding: 20px;
+  border-radius: 18px;
+  padding: 25px;
   color: #3d1a78;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
   cursor: pointer;
   transition: transform 0.3s ease;
   position: relative;
@@ -132,8 +132,12 @@ h1 {
   opacity: 0;
   transform: translateY(15px);
   transition: opacity 0.4s ease, transform 0.4s ease;
-  font-size: 0.95rem;
-  margin-top: 10px;
+  font-size: 1rem;
+  margin-top: 15px;
+  line-height: 1.4;
+}
+.card-container {
+  gap: 40px;
 }
 
 /* Hover effect */
@@ -144,4 +148,19 @@ h1 {
 .card:hover .card-content {
   opacity: 1;
   transform: translateY(0);
+}
+@media (max-width: 900px) {
+  .card-container {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 90%;
+    height: auto;
+  }
+
+  .card-content {
+    opacity: 1;
+    transform: none;
+  }
 }
