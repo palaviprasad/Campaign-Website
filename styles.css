@@ -135,9 +135,11 @@ h1 {
   font-size: 1rem;
   margin-top: 15px;
   line-height: 1.4;
+  opacity: 1; /* IMPORTANT */
 }
+
 .card.active .card-content {
-  max-height: 500px; /* enough space for all text */
+  max-height: 600px; /* enough space for all text */
 }
 .card {
   cursor: pointer;
@@ -151,15 +153,6 @@ h1 {
   gap: 40px;
 }
 
-/* Hover effect */
-.card:hover {
-  transform: translateY(-10px);
-}
-
-.card:hover .card-content {
-  opacity: 1;
-  transform: translateY(0);
-}
 @media (max-width: 900px) {
   .card-container {
     flex-direction: column;
